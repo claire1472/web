@@ -1,0 +1,381 @@
+/* Apply a background color to the entire body */
+body {
+    background-color: gradient (white, #f98e00); /* Light gray background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #f98e00; /* Dark gray header background */
+    color: black; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px; /************* controls the spacing of home, contact, portfolio, and contact**/
+}
+
+nav a {
+    color: black; /* White link text color */ /***********changes the text for home, contact, portforlio, and contact***/
+    text-decoration: none;
+}
+
+/* Style the main content */
+.main-content {
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Style the home section */
+.home {
+    background-color: white; /* White background for the home section */
+    padding: 20px;
+    border-radius: 5px; /* Add rounded corners to the home section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.home h1 {
+    font-size: 36px;
+    color: #333; /* Dark text color */
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555; /* Slightly darker text color */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+
+.image-class {
+    margin-top: 60px; /* Add top margin */
+    margin-left: 50px; /* Add left margin */
+    padding: 5px; /* Add padding within the element */
+    position: fixed;
+    bottom: -8px; /* Position from the top of the parent container */
+    left: -28px; /* Position from the left of the parent container */
+    max-width: 350%; /* Ensure the image doesn't exceed its original width */
+    max-height: 100%; /* Ensure the image doesn't exceed its original height */
+    width: 1438px; /* Let the width adjust automatically to maintain aspect ratio */
+    height: 420px; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+/*****************************************************ABOUT ME**********************************/
+
+
+/* Style the main section */
+/*.main-about {
+    background: linear-gradient(white, #f98e00); /* Light gray background color *
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style the heading *
+.main-about h1 {
+    font-size: 30px;
+    color: linear-gradient (white, #f98e00); /* Dark text color *
+}
+
+.main-about h2 {
+    font-size: larger; /*******************tech management************
+    color: black; /* Dark text color *
+
+
+}
+/* Style the image *
+.main-about img {
+    max-width: 15%;
+    height: 250px;
+    border-radius: 50%; /* Make the image circular *
+    margin-top: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow *
+    top: 100%;
+    left: 100%;
+    transform: translate(-290%, -60%); /****changes the position of the picture to down, up and side***
+    width: 320px;
+    position: static;
+}
+
+/* Style the introductory text *
+ .main-section .intro-text {
+    font-size: 18px;
+    color: black; /* Slightly darker text color *
+    margin-top: 20px;
+    text-align-last: center;
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    transform: translate(-2.5%, -75%);
+    
+}
+
+/* Style the video *
+.main-about video {
+    max-width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow *
+    background: linear-gradient(white, #f98e00);
+}
+
+/* Style the video controls *
+.main-about video::-webkit-media-controls {
+    display: block;
+    background: black;
+}
+
+/* Style the video poster image *
+.main-about video::poster {
+    max-width: 200%;
+    height: auto;
+}
+  
+
+/******************************************* intro video********************************************
+/* Style the video container *
+.intro-video {
+    max-width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow *
+    display: flex;
+    justify-content: center; /* Center the video horizontally *
+    align-items: center; /* Center the video vertically *
+}
+
+ign: center;
+
+
+/* Style the heading */
+.main-about h1 {
+    font-size: 30px;
+    color: linear-gradient(white, #f98e00); /* Dark text color */
+}
+
+.main-about h2 {
+    font-size: larger; /* Tech Management */
+    color: black; /* Dark text color */
+}
+
+/* Style the image */
+.main-about img {
+    max-width: 15%;
+    height: 250px;
+    border-radius: 50%; /* Make the image circular */
+    margin-top: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transform: translate(-290%, -60%); /* Adjust the position of the picture */
+    width: 320px;
+}
+
+/* Style the introductory text */
+.main-about .intro-text {
+    font-size: 18px;
+    color: black; /* Slightly darker text color */
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style the video */
+.main-about video {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 25px;
+   
+}
+
+.main-about {
+    text-align: center;
+    background: linear-gradient(white, rgb(249, 142, 0));
+    padding: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************** PROJECT *******************************************/
+
+
+/* Style the main section */
+.main-section {
+    background: radial-gradient(blue,#f98e00); /* Light gray background color */ /**** changes the backgroung color for the top**/
+    padding: 40px;
+    text-align: center;
+    
+}
+
+/* Style the heading */
+.main-section h1 {
+    font-size: 36px;
+    color: white; /* light text color */ /*changes the word project**/
+}
+
+/* Style the project list */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+   
+}
+
+.project-list li {
+    font-size: 18px;
+    color: white; /* Slightly darker text color */ /*** changes the text color for the top**/
+    margin: 10px 0;
+}
+
+.project-list li:before {
+    content: "\2022"; /* Bullet symbol (•) as list item marker */
+    color: white; /* white bullet color */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Style project descriptions */
+.project-list li::after {
+    content: attr(data-description); /* Add project description from data-description attribute */
+    display: block;
+    font-size: 16px;
+    color: white; /* Slightly lighter text color for descriptions */
+}
+
+
+
+/* Style the first image */
+.image1 {
+    max-width: 100%;          /* Ensure images fit within their containers */
+    height: auto;             /* Maintain the aspect ratio */
+    margin: 0 10px;           /* Add some horizontal margin between images */
+    border: 2px solid #333;   /* Add a border for separation (optional) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow (optional) */
+}
+
+/* Style the second image */
+.image2 {
+    position: absolute; /* Position the image absolutely */
+    top: 80%;           /* Move the image vertically to the middle */
+   /* right: 2px;           /* Move the image to the right edge */
+    float: right;
+    left: 300px;
+    transform: translate(10%, -50%) scale(0.6); /* Scale the image to 1.5 times its original size */
+    border-radius: 25px;
+  
+  
+}
+
+
+
+
+
+/******************************************************** CONTACT ME***********************************/
+
+/* Style the main section */
+.main-contact {
+    background: linear-gradient(#f98e00, white); /* Light gray background color */
+    padding: 90px;
+    text-align: center;
+
+    
+}
+
+/* Style the heading */
+.main-contact h1 {
+    font-size: 36px;
+    color: linear-gradient (#f98e00,white); /* Dark text color */
+}
+   
+
+/* Style labels for form elements */
+label {
+    display: block;
+    font-size: 18px;
+    color: #333; /* Dark text color */
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Style form input fields */
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"].btn {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Add hover effect to the submit button */
+input[type="submit"].btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */ /*for the submit botton*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
