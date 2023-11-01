@@ -1,0 +1,59 @@
+/* Style the main section */
+.main-section {
+    background: radial-gradient(blue,#f98e00); /* Light gray background color */ /**** changes the backgroung color for the top**/
+    padding: 40px;
+    text-align: center;
+
+}
+
+/* Style the heading */
+.main-section h1 {
+    font-size: 36px;
+    color: white; /* light text color */ /*changes the word project**/
+}
+
+/* Style the project list */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.project-list li {
+    font-size: 18px;
+    color: white; /* Slightly darker text color */ /*** changes the text color for the top**/
+    margin: 10px 0;
+}
+
+.project-list li:before {
+    content: "\2022"; /* Bullet symbol (•) as list item marker */
+    color: white; /* white bullet color */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Style project descriptions */
+.project-list li::after {
+    content: attr(data-description); /* Add project description from data-description attribute */
+    display: block;
+    font-size: 16px;
+    color: white; /* Slightly lighter text color for descriptions */
+}
+
+
+
+
+
+/* Style the second image */
+.image2 {
+    position: absolute; /* Position the image absolutely */
+    top: 69%;           /* Move the image vertically to the middle */
+    /* right: 2px;           /* Move the image to the right edge */
+    left: 33%;
+    transform: scale(0.9); /* Scale the image to 1.5 times its original size */
+    border-radius: 25px;
+
+
+}

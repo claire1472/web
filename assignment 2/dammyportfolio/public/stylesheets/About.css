@@ -1,0 +1,95 @@
+
+.intro-text {
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 2%;
+    margin-top: 20px;
+    color: #555; /* Slightly darker text color */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+
+.image-class {
+    margin-top: 60px; /* Add top margin */
+    margin-left: 50px; /* Add left margin */
+    padding: 5px; /* Add padding within the element */
+    position: fixed;
+    bottom: -5px; /* Position from the top of the parent container */
+    left: -28px; /* Position from the left of the parent container */
+    max-width: 350%; /* Ensure the image doesn't exceed its original width */
+    max-height: 100%; /* Ensure the image doesn't exceed its original height */
+    width: 1438px; /* Let the width adjust automatically to maintain aspect ratio */
+    height: 420px; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+/* Style the heading */
+.main-about h1 {
+    font-size: 30px;
+    background: linear-gradient(white, #f98e00); /* Dark text color */
+}
+
+.main-about h2 {
+    font-size: 75px; /* Tech Management */
+    color: black; /* Dark text color */
+}
+
+/* Style the image */
+.main-about img {
+    max-width: 15%;
+    height: 300px;
+    border-radius: 50%; /* Make the image circular */
+    margin-top: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    width: 320px;
+    position:relative;
+    top: -10%;
+    left: -40%;
+}
+
+/* Style the introductory text */
+.main-about .intro-text {
+    font-size: 19px;
+    color: black; /* Slightly darker text color */
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style the video */
+.main-about video {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 25px;
+
+}
+
+.main-about {
+    text-align: center;
+    background: linear-gradient(white, rgb(249, 142, 0));
+    padding: 40px;
+
+}
+.intro-video
+{
+    position:relative;
+    left: -38%;
+    height: 100%;
+}

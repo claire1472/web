@@ -1,0 +1,54 @@
+/* Style the main section */
+.main-contact {
+    background: linear-gradient(#f98e00, white); /* Light gray background color */
+    padding: 90px;
+    text-align: center;
+
+
+}
+
+/* Style the heading */
+.main-contact h1 {
+    font-size: 36px;
+    background: linear-gradient(#f98e00,white); /* Dark text color */
+}
+
+
+/* Style labels for form elements */
+label {
+    display: block;
+    font-size: 18px;
+    color: #333; /* Dark text color */
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Style form input fields */
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"].btn {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Add hover effect to the submit button */
+input[type="submit"].btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */ /*for the submit botton*/
+}
