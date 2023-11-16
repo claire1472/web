@@ -1,0 +1,15 @@
+#homepage-txt
+{
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+}
+#homepage-txt h1
+{
+    color: #1450A3;
+    font-size: 60px;
+}

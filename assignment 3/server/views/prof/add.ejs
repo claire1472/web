@@ -1,0 +1,25 @@
+<%- include('../partials/Header.ejs') %>
+<%- include('../partials/Site_Header.ejs') %>
+<div class="container">
+    <div class="row">
+        <form class="form" method="POST">
+            <div class="form-elements">
+                <label for="name">Full Name</label>
+                <input type="text" class="elements" id="name" placeholder="Enter prof's Full Name" name="FullName" required>
+            </div>
+            <div class="form-elements mt-3">
+                <label for="Lastname">Program</label>
+                <input type="text" class="elements" id="Lastname" placeholder="Enter profs's Program" name="Program" required>
+            </div>
+            <div class="form-elements mt-3">
+                <label for="ID">Email</label>
+                <input type="text" class="elements" id="ID" placeholder="Enter prof's Email" name="Email" required>
+            </div>
+            <button class="btn" type="submit" >Submit</button>
+            <button type = "button" onclick="window.location.href='/proflist'" class="btn">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<%- include('../partials/Site-Footer.ejs') %>
+<%- include('../partials/Footer.ejs') %>

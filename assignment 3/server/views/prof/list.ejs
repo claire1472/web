@@ -1,0 +1,39 @@
+<%- include('../partials/Header.ejs') %>
+<%- include('../partials/Site_Header.ejs') %>
+<a href="/proflist/add" class="btn btn-primary mb-3" role="button">
+    <i class="fas fa-plus-circle"></i> Add Prof
+</a>
+
+<table class="table table-bordered table-striped table-hover">
+    <tr class="d-flex">
+        <th class="text-center col-2">Full Name</th>
+        <th class="text-center col-2">Program</th>
+        <th class="text-center col-4">Email</th>
+    </tr>
+    <% profList.forEach(prof => { %>
+        <tr class="d-flex">
+            <td class="text-center col-2"><%= prof.FullName %></td>
+            <td class="text-center col-2"><%= prof.Program %></td>
+            <td class="text-center col-4"><%= prof.Email %></td>
+            <td class="text-center col-1">
+                <button class="btn" onclick="window.location.href='/proflist/edit/<%= prof._id %>'">Edit</button>
+            </td>
+            <td class="text-center col-1">
+                <button data-href="/proflist/delete/<%= prof._id %>" class="btn" onclick="return confirmDelete('<%= prof.Email %>')">Delete</button>
+                    <script>
+                        function confirmDelete(profid) {
+                            var result = confirm("Are you sure you want to delete this entry?");
+                            if (result) {
+                                var element = document.activeElement;
+                                var href = element.getAttribute('data-href');
+                                window.location.href = href;
+                            }
+                        }
+                    </script>
+            </td>
+        </tr>
+    <% }); %>
+</table>
+
+<%- include('../partials/Site-Footer.ejs') %>
+<%- include('../partials/Footer.ejs') %>
