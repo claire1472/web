@@ -8,7 +8,8 @@ module.exports.Dislayproflist = async (req,res,next)=>{ //< Mark function as asy
         const profList = await prof.find(); //< Use of await keyword
         res.render('prof/list', {
             title: 'prof List',
-            profList: profList
+            profList: profList,
+            displayName: req.user ? req.user.displayName:''
         });
     }catch(err){
         console.error(err);
@@ -23,7 +24,8 @@ module.exports.Addprof = async (req,res,next)=>{
     try{
         res.render('prof/add',
             {
-                title:'Add prof'
+                title:'Add prof',
+                displayName: req.user ? req.user.displayName:''
             })
     }
     catch(err)

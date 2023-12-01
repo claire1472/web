@@ -4,6 +4,18 @@ var router = express.Router();
 let prof = require('../models/proflist');
 let profController = require('../controllers/proflist')
 /* Get route for the Info prof list */
+
+let mongoose = require('mongoose');
+// helper function
+function requireAuth(req,res,next){
+    if(!req.isAuthenticated())
+    {
+        return res.redirect('/login')
+    }
+    next();
+}
+
+
 // Read Operation
 router.get('/', profController.Dislayproflist);
 /* Get route for Add Book page --> Create */
